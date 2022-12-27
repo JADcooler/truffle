@@ -1,0 +1,1 @@
+const abi = JSON.parse(fs.readFileSync("build/contracts/Demo.json"))["abi"];

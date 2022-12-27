@@ -1,0 +1,4 @@
+contract
+that migrations folder program
+truffle compile
+truffle migrate --network goerli
