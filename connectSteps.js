@@ -39,3 +39,5 @@ const rece = await tx.send({from: signer.address,gas: await tx.estimateGas()}).o
 web3.utils.hexToAscii(bytes)
 
 contract.methods.func().call() returns value
+
+web3.eth.sendTransaction({ from: account, data: bytecode }, function(err,res){console.log(res)});
