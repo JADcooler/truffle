@@ -4,6 +4,8 @@
 await contract2.methods.owner().call() //for view or pure functions
 await contract2.methods.init().send({from: player}) //for gas functions
 
+await contract2.methods.init( param1, param2,  {from: player, value: 1000}) //actually works
+
 
 
 > await web3.eth.getStorageAt('0x39E2C1570093218C35b4549667896bcc675aeC23',1)
