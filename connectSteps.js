@@ -40,4 +40,12 @@ web3.utils.hexToAscii(bytes)
 
 contract.methods.func().call() returns value
 
+
+await contract2.methods.owner().call() //for view or pure functions
+await contract2.methods.init().send({from: player}) //for gas functions
+
+
+
+to create a contract, the to address has to be empty
 web3.eth.sendTransaction({ from: account, data: bytecode }, function(err,res){console.log(res)});
+
